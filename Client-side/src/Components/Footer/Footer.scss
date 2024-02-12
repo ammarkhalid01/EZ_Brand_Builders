@@ -1,0 +1,429 @@
+@mixin media($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+
+.footerCom {
+    background: url(../../Assets/footerBg.png) center;
+    background-size: cover;
+    padding: 0 1rem;
+
+    .main {
+
+        .head {
+            padding: 8vmin 0 3vmin 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 3vmin;
+
+            h2 {
+                color: #FFF;
+                text-align: center;
+                font-family: DM Sans;
+                font-size: 1.875rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 116.5%;
+                max-width: 40rem;
+                width: 100%;
+            }
+
+            .input {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 2vmin;
+
+                input {
+                    color: #979797;
+                    font-family: DM Sans;
+                    font-size: 0.8125rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 94.5%;
+                    letter-spacing: -0.0325rem;
+                    padding: .5rem .8rem;
+                    width: 26rem;
+                    max-width: 100%;
+                    height: 2.25rem;
+
+                    &::placeholder {
+                        color: #A0A0A0;
+                        font-family: DM Sans;
+                        font-size: 0.9375rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 94.5%;
+                        letter-spacing: -0.0375rem;
+                    }
+                }
+
+                button {
+                    width: 9.0625rem;
+                    height: 2.625rem;
+                    color: #212121;
+                    font-family: DM Sans;
+                    font-size: 1.125rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 94.5%;
+                    letter-spacing: -0.045rem;
+                    border-radius: 0.3125rem;
+                    background: #00C1FF;
+                    cursor: pointer;
+                    border: none;
+                }
+            }
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 24.375rem;
+
+            .left {
+                max-width: 27rem;
+                display: flex;
+                flex-direction: column;
+                gap: 3vmin;
+                padding: 3vmin 0;
+
+                h5 {
+                    color: #FFF;
+                    font-family: DM Sans;
+                    font-size: 5.2vmin;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 116.5%;
+                }
+
+                p {
+                    color: #ffffff52;
+                    font-family: DM Sans;
+                    font-size: 3vmin;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 116.5%;
+                }
+
+                .links-icon {
+                    a {
+                        cursor: pointer;
+                        color: #00C1FF;
+                        font-size: 2rem;
+                        padding: 0 1.5vmin 0 0;
+                        transition: 200ms all;
+                        &:hover{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+            .mid {
+                h5 {
+                    color: #FFF;
+                    font-family: DM Sans;
+                    font-size: 1.125rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 116.5%;
+                    margin-bottom: 1rem;
+                }
+
+                ul {
+                    li {
+                        a {
+
+                            color: #ffffff8f;
+                            font-family: DM Sans;
+                            font-size: 1rem;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 197.5%;
+                            text-decoration: none;
+                            transition: 200ms all;
+
+                            &:hover {
+                                padding-left: 5px;
+                                color: #fff;
+                            }
+                        }
+
+                        list-style: none;
+                    }
+                }
+            }
+
+            .right {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+
+                .twoDiv {
+                    display: flex;
+                    gap: .9rem;
+                    border-radius: 0.25rem;
+                    background: #D9D9D9;
+                    border: none;
+                    width: 9.0625rem;
+                    height: 1.9375rem;
+
+                    input {
+                        width: 9rem;
+                        height: 1.9375rem;
+                        padding: .5rem .8rem;
+                        color: #979797;
+                        font-family: DM Sans;
+                        font-size: 0.8125rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 94.5%;
+                        letter-spacing: -0.0325rem;
+
+                        &::placeholder {
+                            color: #979797;
+                            font-family: DM Sans;
+                            font-size: 0.8125rem;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 94.5%;
+                            letter-spacing: -0.0325rem;
+                        }
+                    }
+                }
+
+                input {
+                    max-width: 18.8125rem;
+                    width: 100%;
+                    height: 1.9375rem;
+                    padding: .5rem .8rem;
+                    color: #979797;
+                    font-family: DM Sans;
+                    font-size: 0.8125rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 94.5%;
+                    letter-spacing: -0.0325rem;
+
+                    &::placeholder {
+                        color: #979797;
+                        font-family: DM Sans;
+                        font-size: 0.8125rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 94.5%;
+                        letter-spacing: -0.0325rem;
+                    }
+
+                }
+
+                input {
+                    border: none;
+                    width: 18.8125rem;
+                    border-radius: 0.25rem;
+                    background: #D9D9D9;
+                    color: #979797;
+                    font-family: DM Sans;
+                    font-size: 0.8125rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 94.5%;
+                    letter-spacing: -0.0325rem;
+
+                    &::placeholder {
+                        color: #979797;
+                        font-family: DM Sans;
+                        font-size: 0.8125rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 94.5%;
+                        letter-spacing: -0.0325rem;
+                    }
+                }
+
+                textarea {
+                    border: none;
+                    width: 18.8125rem;
+                    height: 3.6875rem;
+                    border-radius: 0.25rem;
+                    background: #D9D9D9;
+                    padding: .5rem .8rem;
+                    color: #979797;
+                    font-family: DM Sans;
+                    font-size: 0.8125rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 94.5%;
+                    letter-spacing: -0.0325rem;
+
+                    &::placeholder {
+                        color: #979797;
+                        font-family: DM Sans;
+                        font-size: 0.8125rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 94.5%;
+                        letter-spacing: -0.0325rem;
+                    }
+
+                }
+
+                button {
+                    cursor: pointer;
+                    width: 8.25rem;
+                    height: 2.375rem;
+                    flex-shrink: 0;
+                    border-radius: 3.125rem;
+                    background: #00C1FF;
+                    color: #212121;
+                    font-family: DM Sans;
+                    font-size: 0.9375rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 94.5%;
+                    letter-spacing: -0.0375rem;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .hr {
+        width: 100%;
+        height: .1rem;
+        background-color: #FFF;
+    }
+
+    .bottom {
+        padding-left: 25vmin ;
+        p {
+            color: #ffffff66;
+            font-family: DM Sans;
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 116.5%;
+            padding: 1rem 0rem;
+            a{
+                color: #FFF;
+                transition: 400ms all;
+                font-weight: bolder;
+                &:hover{
+                    color: #00C1FF;
+                }
+            }
+        }
+    }
+}
+
+@include media(998px) {
+    .footerCom {
+
+        .main {
+
+            .content {
+                .mid {
+                    display: none;
+                }
+
+                .right {
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@include media(700px) {
+    .footerCom {
+        .main {
+            .head {
+                .input {
+                    flex-direction: column;
+                }
+            }
+
+            .content {
+                flex-direction: column;
+
+                .left {
+                    padding: 2.5rem 0;
+                    text-align: center;
+                }
+
+                .right {
+                    flex-direction: column;
+                    margin-left: unset;
+
+                    button {
+                        margin-bottom: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            text-align: center;
+            padding-left: unset;
+        }
+    }
+}
+
+@include media(430px) {
+    .footerCom {
+
+        .main {
+            .head {
+                .input {
+                    flex-direction: column;
+
+                    input {
+                        max-width: 19rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media(330px) {
+    .footerCom {
+
+        .main {
+            .head {
+                .input {
+                    flex-direction: column;
+
+                    input {
+                        max-width: 18rem;
+                    }
+                }
+            }
+
+            .content {
+                .right {
+                    .twoDiv {
+                        width: 8.0625rem;
+
+                        input {
+                            width: 8rem;
+                        }
+                    }
+
+                    input {
+                        width: 16.8125rem;
+                    }
+
+                    textarea {
+                        width: 16.8125rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+.servicesCards {
+  background: #1b0625;
+  padding: 10vmin 7vmin;
+}
+.servicesCards .main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.servicesCards .main .left {
+  display: flex;
+  flex-direction: column;
+  gap: 3vmin;
+}
+.servicesCards .main .left h1 {
+  color: #FFF;
+  font-family: DM Sans;
+  font-size: 2.375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.servicesCards .main .left p {
+  color: #FFF;
+  font-family: Noto Sans;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 156.5%;
+  max-width: 39.5625rem;
+}
+.servicesCards .main .left button {
+  width: 9.5625rem;
+  height: 2.625rem;
+  flex-shrink: 0;
+  border-radius: 3.125rem;
+  background: #31BAD0;
+  color: #1B0625;
+  font-family: DM Sans;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94.5%;
+  letter-spacing: -0.045rem;
+  border: none;
+  cursor: pointer;
+}
+.servicesCards .main .right img {
+  max-width: 35.75rem;
+  width: 100%;
+  padding-left: 4vmin;
+}
+@media screen and (max-width: 998px) {
+  .servicesCards .main {
+    flex-direction: column;
+  }
+  .servicesCards .main .left {
+    display: flex;
+    flex-direction: column;
+    gap: 3vmin;
+  }
+  .servicesCards .main .left h1 {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 2.375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .servicesCards .main .left p {
+    color: #FFF;
+    font-family: Noto Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 156.5%;
+    max-width: 39.5625rem;
+  }
+  .servicesCards .main .left button {
+    width: 9.5625rem;
+    height: 2.625rem;
+    flex-shrink: 0;
+    border-radius: 3.125rem;
+    background: #31BAD0;
+    color: #1B0625;
+    font-family: DM Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 94.5%;
+    letter-spacing: -0.045rem;
+    border: none;
+    cursor: pointer;
+  }
+  .servicesCards .main .right {
+    margin: 6vmin 0;
+  }
+  .servicesCards .main .right img {
+    max-width: 35.75rem;
+    width: 100%;
+    padding-left: 4vmin;
+  }
+}/*# sourceMappingURL=ServicesCard.css.map */

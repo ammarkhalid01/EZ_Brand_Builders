@@ -1,0 +1,130 @@
+@mixin media($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+
+.page4-cards {
+    max-width: 25.9375rem;
+    width: 100%;
+    height: 18.1875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vmin;
+    transition: 200ms all;
+    cursor: pointer;
+    &:hover{
+        background-color: #31bbd00b;
+    }
+    &:first-child {
+        border-right: 0.03125rem solid #31BAD0;
+        border-bottom: 0.03125rem solid #31BAD0;
+        background-color: #31BAD0;
+        transition: 200ms all;
+        &:hover{
+            background-color: #1bd1ed;
+        }
+    }
+
+    &:nth-child(2) {
+        border-bottom: 0.03125rem solid #31BAD0;
+        border-right: 0.03125rem solid #31BAD0;
+    }
+
+    &:nth-child(3) {
+        border-bottom: 0.03125rem solid #31BAD0;
+    }
+
+    &:nth-child(4) {
+        border-right: 0.03125rem solid #31BAD0;
+    }
+
+    &:nth-child(5) {
+        border-right: 0.03125rem solid #31BAD0;
+    }
+
+    img {
+        max-height: 4.5rem;
+    }
+
+    h2 {
+        color: #FFF;
+        text-align: center;
+        font-family: DM Sans;
+        font-size: 1.3125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.75rem;
+        text-transform: capitalize;
+    }
+
+    p {
+        max-width: 21rem;
+        width: 100%;
+        color: #ffffff;
+        text-align: center;
+        font-family: Plus Jakarta Sans;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.625rem;
+    }
+
+}
+@include media(1290px) {
+    .page4-cards {
+        &:first-child {
+            border-right: 0.03125rem solid #31BAD0;
+            border-bottom: 0.03125rem solid #31BAD0;
+        }
+        
+        &:nth-child(2) {
+            border-bottom: 0.03125rem solid #31BAD0;
+            border-right: unset;
+        }
+        
+        &:nth-child(3) {
+            border-bottom: 0.03125rem solid #31BAD0;
+            border-right: 0.03125rem solid #31BAD0;
+        }
+        
+        &:nth-child(4) {
+            border-bottom: 0.03125rem solid #31BAD0;
+            border-right: unset;
+        }
+
+        &:nth-child(5) {
+            border-right: 0.03125rem solid #31BAD0;
+        }
+    }
+}
+@include media(870px) {
+    .page4-cards {
+        &:first-child {
+            border-right: unset;
+            border-bottom: 0.03125rem solid #31BAD0;
+        }
+        
+        &:nth-child(2) {
+            border-bottom: 0.03125rem solid #31BAD0;
+            border-right: unset;
+        }
+        
+        &:nth-child(3) {
+            border-bottom: 0.03125rem solid #31BAD0;
+            border-right: unset;
+        }
+        
+        &:nth-child(4) {
+            border-bottom: 0.03125rem solid #31BAD0;
+            border-right: unset;
+        }
+        
+        &:nth-child(5) {
+            border-bottom: 0.03125rem solid #31BAD0;
+            border-right: unset;
+        }
+    }
+}

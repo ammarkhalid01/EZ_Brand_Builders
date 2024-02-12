@@ -1,0 +1,97 @@
+@mixin media($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+
+.services {
+    .page1 {
+        background: url(./Assest_Services/servicesBg.png) center;
+        background-size: cover;
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 0 18vmin;
+
+        h1 {
+            span:first-child {
+                color: #31BAD0;
+                font-family: DM Sans;
+                font-size: 15.5vmin;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 94.5%;
+                /* 5.31563rem */
+                letter-spacing: -0.225rem;
+            }
+
+            span:nth-child(2) {
+                color: #C751FF;
+                font-family: DM Sans;
+                font-size: 15.5vmin;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 94.5%;
+                letter-spacing: -0.225rem;
+            }
+
+            span:nth-child(4) {
+                color: #20C5A7;
+                font-family: DM Sans;
+                font-size: 15.5vmin;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 94.5%;
+                letter-spacing: -0.225rem;
+            }
+        }
+
+        p {
+            color: #FFF;
+            font-family: Noto Sans;
+            font-size: 3.1vmin;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 156.5%;
+            max-width: 48.875rem;
+        }
+    }
+
+    @include media(600px) {
+        .services {
+            .page1 {
+                min-height: unset;
+                padding: 15vmin 18vmin;
+            }
+        }
+    }
+
+    .page2 {
+        background-color: #1b0625;
+        padding: 14vmin 0;
+        min-height: 100vh;
+        .head {
+            h1 {
+                text-align: center;
+                padding-bottom: 10vmin;
+                color: #FFF;
+                font-family: DM Sans;
+                font-size: 6.9vmin;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+
+        .services-cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: .5rem;
+            gap: 5vmin;
+        }
+    }
+}
